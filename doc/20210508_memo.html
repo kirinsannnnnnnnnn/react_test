@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>tutorial</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="tutorial">tutorial</h1>
+<ul>
+<li><a href="https://ja.reactjs.org/tutorial/tutorial.html">https://ja.reactjs.org/tutorial/tutorial.html</a></li>
+</ul>
+<h2 id="dockerfile">Dockerfile</h2>
+<ul>
+<li>最新のnode.jsとチュートリアルに書いてあるが、、ltsは14でlatestは16っぽい…？
+<ul>
+<li>勉強用なのでlatestで</li>
+</ul>
+</li>
+</ul>
+<p>参考: <a href="https://qiita.com/tanaka-tt/items/49628cd423e490120eeb#dockerfile%E3%82%92%E6%9B%B8%E3%81%8F">https://qiita.com/tanaka-tt/items/49628cd423e490120eeb#dockerfileを書く</a></p>
+<h2 id="js">js</h2>
+<ul>
+<li>
+<p>function()のthis問題</p>
+<ul>
+<li><a href="https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/">https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/</a></li>
+</ul>
+</li>
+<li>
+<p>classのコンストラクタ</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a></li>
+<li>継承時のコンストラクタは常にsuperを呼ぶべきとのこと</li>
+<li>それはそう</li>
+<li>super().<strong>init</strong>(*args, **kwargs)みたいな気持ちか</li>
+</ul>
+</li>
+</ul>
+<h2 id="react">react</h2>
+<ul>
+<li>子コンポーネント同士がやり取りしてそれぞれの状態を変更するのはアンチパターンらしい</li>
+<li>親コンポーネントが状態を管理して、子コンポーネントは渡された引数のみに依存して表示するのが良さそう
+<ul>
+<li>多分子コンポーネントは冪等性がある感じになると良いんだろうなぁ…</li>
+</ul>
+</li>
+<li>処理が複雑になってくるとどんどん状態をリフトアップしていく流れだった
+<ul>
+<li>結局トップが全部面倒見ることになりそうだがコンポーネント分けた意味が無くなりそうに見えるが…</li>
+</ul>
+</li>
+</ul>
+
+    </body>
+    </html>
